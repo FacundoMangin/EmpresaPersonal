@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+/*---------------------------------------------------------------------------------------- */
+/*-------------------------- Variables --------------------------------- */
+/*---------------------------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------------------------------------- */
+/*-------------------------- Imagen Galeria --------------------------------- */
+/*---------------------------------------------------------------------------------------- */
+
+
+.seccion-carrusel{
+  padding: 100px 0px 100px 0px;
+  background: rgb(255, 245, 241);
+  border-top: 5px solid var(--color-borde-margen-arriba);
+}
+
+.portafolio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    background: var(--color-fondo);
+    background-size: cover;
+}
+
+.titulo-carrusel{
+    padding:0 10px 10px 10px; 
+    margin-bottom:40px;
+    font-size:70px;
+    color: #2677ce;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-carousel{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------- */
+  
+/*--------------------------------------------------------------
+-----------------------  Respónsive  ---------------------------
+----------------------------------------------------------------*/
+@media screen and (max-width: 900px){
+  .titulo-carrusel{
+      font-size:60px;
+  }
+
+} 
+
+
+@media only screen and (max-width: 730px)  {
+   
+  .seccion-carrusel{
+    padding: 50px 0px 50px 0px;
+  }
+
+  .titulo-carrusel{
+    padding:0
+  }
+}
+
+
+
+
+@media screen and (max-width: 368px){
+    
+  .titulo-carrusel{
+    font-size:45px;
+  }
+
+} 
+

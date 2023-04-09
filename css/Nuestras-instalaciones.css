@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+:root{
+    --color-borde-margen-arriba: rgb(218, 218, 218);                    /* borde-margen-arriba  */
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    padding: 40px; /*Para que cada seccion tenga su espacio para diferenciarce de la otra de 40px*/
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.seccion-nuestras-instalaciones{
+    border-top: 5px solid var(--color-borde-margen-arriba);
+    background: rgb(255, 240, 234);
+    padding: 70px 0 70px 0;
+}
+
+.quienes-somos-instalaciones{
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Crete Round';
+    padding: 0 20px 40px 20px;
+    
+}
+
+.titulo-diferencia-instalaciones{
+    font-weight:bold; 
+    padding-bottom: 10px; 
+    margin-bottom:40px;
+    text-align:center;
+    font-size:70px;
+    color: #2677ce;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.contenedor-sobre-nosotros-instalaciones{
+    display: grid;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.contenedor-sobre-nosotros-instalaciones img{
+    width: 30%;
+    float: left;
+    padding: 0px 18px 0px 0px;
+}
+
+
+
+.contenidos-textos-instalaciones h3{
+    font-size: 30px;
+    color: #252525;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    font-weight: bold;
+
+}
+
+
+.contenidos-textos-instalaciones p {
+    padding: 15px 30px 15px 30px;
+    font-size: 17px;
+    text-align: justify;
+    font-family: 'Crete Round';
+    color: #313131;
+}
+
+.contenidos-textos-instalaciones{
+    display: flex;    
+    flex-direction: column;  /*para que el texto se escriba uno bajo el otro*/
+    border-radius:10px;
+    margin: 20px;
+    background: #deebfa;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .contenedor-sobre-nosotros-instalaciones{
+        grid-template-columns: repeat(1, 2fr);        
+    }
+
+} 
+
+@media screen and (max-width: 900px){
+    .titulo-diferencia-instalaciones{
+        font-size:60px;
+    }
+
+    .quienes-somos-instalaciones{
+        font-size: 19px;        
+    }
+} 
+
+@media screen and (max-width: 560px){
+
+    .contenedor-sobre-nosotros-instalaciones img{
+        width: 50%;
+        padding: 0px 10px 2px 0px;
+    }
+} 
+
+@media screen and (max-width: 500px){
+    .titulo-diferencia-instalaciones{
+        font-size: 50px;
+    }
+
+    .contenidos-textos-instalaciones h3{
+        font-size: 25px;
+    }
+
+    .contenidos-textos-instalaciones p {
+        font-size: 12px;
+    }
+
+    .contenedor{
+        padding: 0;
+        max-width: none;
+    }
+
+} 
+
+@media screen and (max-width: 368px){
+    .titulo-diferencia-instalaciones{
+        font-size:50px;
+    }
+
+    .quienes-somos-nuestras-instalaciones{
+        font-size: 16px;        
+    }
+} 
+
+@media screen and (max-width: 310px){
+    .titulo-diferencia-instalaciones{
+        font-size:35px;
+    }
+
+    .quienes-somos-instalaciones{
+        font-size: 15px;        
+    }
+
+    .contenidos-textos-instalaciones h3{
+        font-size: 13px;
+    }
+
+    .contenedor{
+        padding: 0; /*Para que cada seccion tenga su espacio para diferenciarce de la otra de 40px*/
+        max-width: 80%;
+        margin: auto;
+        overflow: hidden;
+        align-items: center;
+    }
+
+} 
+
+@media screen and (max-width: 280px){
+    .titulo-diferencia-instalaciones{
+        font-size: 30px;
+    }
+
+    .quienes-somos-instalaciones{
+        font-size: 14px;        
+    }
+
+    .contenidos-textos-instalaciones p {
+        font-size: 9px;
+    }
+    
+
+} 

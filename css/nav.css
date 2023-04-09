@@ -1,0 +1,35 @@
+.navbar{
+background: rgb(255, 127, 80);
+}
+
+.navbar-nav a{
+    font: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;
+}
+
+@media only screen and(max-width: 767px) {
+  
+    .navbar-nav{
+      text-align: center;
+    }
+  
+  }

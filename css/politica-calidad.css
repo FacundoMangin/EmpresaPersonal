@@ -1,0 +1,18 @@
+.logo img{
+    width: 70%;
+}
+
+.logo{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 1px solid rgb(58, 58, 58);
+    box-shadow: 0 0 6px 0 rgba(17, 17, 17, .5);
+}
+
+h1{
+    font-size: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #2677ce;
+}
