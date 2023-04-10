@@ -1,9 +1,8 @@
 #wrapper {
 	position: relative;
 	height: 100vh;
-	margin-top: 4rem;
 }
-#slider-area {
+#id-portada {
 	position: absolute;
 	height: 100vh;
 	width: 100%;
@@ -14,7 +13,7 @@
 	background-attachment:  fixed;
 	background-image: url(../imagenes/metalurgica.png); 
 }
-#slider-area::after {
+#id-portada::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -23,7 +22,7 @@
 	height: 100%;
 	background: rgba(0, 0, 0, 0.7);
 }
-#slider-area .owl-item div {
+#id-portada .owl-item div {
 	height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -31,28 +30,28 @@
 	background-size: cover;
 	background-position: center center;
 }
-.slider-text {
+.texto-portada {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-.slider-text h2 {
+.texto-portada h2 {
 	font-family: montserrat;
 	font-size: clamp(1rem, 2.5rem, 15vw);
 	margin: 0;
 	color: #fff;
 	text-transform: uppercase;
 }
-.slider-text h2 span {
+.texto-portada h2 span {
 	color: coral;
 }
-.slider-text p {
+.texto-portada p {
 	font-size: clamp(1rem, 1rem, 15vw);
 	color: #fff;
 }
-.slider-text a {
+.texto-portada a {
 	text-decoration: none;
 	background: coral;
 	color: #fff;
@@ -67,7 +66,7 @@
 	border-radius: 8px;
 }
 
-.slider-text a:hover {
+.texto-portada a:hover {
 	color: #fff;
 	transform: scale(1.04);
 }

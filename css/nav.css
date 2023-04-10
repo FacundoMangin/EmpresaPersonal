@@ -1,35 +1,54 @@
+:root{
+    --letras: white;
+    --letras-hover: rgb(255, 5, 5);
+    --fondo:coral;
+    --hover: rgb(255, 217, 203);
+  }
+
+/*----------------------------------------------------------------------- */
+/*-------------------------- NAVEGACION --------------------------------- */
+/*----------------------------------------------------------------------- */
+
 .navbar{
-background: rgb(255, 127, 80);
+background: var(--fondo);
+-webkit-box-shadow: inset 7px 4px 38px -25px rgba(255,0,255,1);
+-moz-box-shadow: inset 7px 4px 38px -25px rgba(255,0,255,1);
+box-shadow: inset 7px 4px 38px -25px rgba(255,0,255,1);
 }
+
 
 .navbar-nav a{
-    font: 15px;
+    font-size: 1em;
     text-transform: uppercase;
-    font-weight: 500;
-    color: aliceblue;
+    color: var(--letras);
+    font-family: 'Rubik';
 }
 
-.navbar-light .navbar-brand{
-    color: black;
-    font-size: 25px;
+.text-commander{
+    display: flex;
+    font-size: 2em;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+    color: var(--letras);
+    font-family: 'Rubik';
+    font-weight: bold;
+    text-decoration: none
 }
 
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover{
-    color: black;
+.navbar-nav a:hover{
+    color: var(--hover);
+    transition: all 300ms ease-in-out;;
 }
 
-.navbar-light .navbar-nav .navbar-link{
-    color: black;
+
+@media screen and (max-width: 380px){
+.text-commander{
+    font-size: 1.5em;
+}
+.navbar-nav a{
+    font-size: 1em;
 }
 
-@media only screen and(max-width: 767px) {
-  
-    .navbar-nav{
-      text-align: center;
-    }
-  
-  }
+}
+
+
+
