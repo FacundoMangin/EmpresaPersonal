@@ -11,6 +11,9 @@
     --color-whatsapp: rgb(25, 160, 13);                                 /* whatsapp  */
     --color-mail: rgb(77, 120, 185);                                    /* mail  */
     --color-letras: rgb(0, 0, 0);                                       /*  letra */
+    --tamaño-titulo: clamp(2rem, 2.5rem, 12vw);
+    --tamaño-contenido-p: clamp(1rem, 1rem, 12vw);
+    --tamaño-logo-redes-sociales: clamp(18px, 22px, 7vw);
 }
 
 
@@ -18,21 +21,17 @@
 /*-------------------------- Footer --------------------------------- */
 /*---------------------------------------------------------------------------------------- */
 
-.contenedor-footer{
-
+footer{
     background: var(--color-fondo-footer);  /* respaldo para navegadores antiguos */
-    text-align: center;  /*Cetra en anchura*/
-    align-items: center;  /*Cetra en altura*/
-    display: grid;
-    padding: 30px 0px;
-    border-top: 5px solid var(--color-borde-margen-arriba);
-    padding: 50px 100px 50px 100px;
-    
+    border-top: 3px solid var(--color-borde-margen-arriba);
 }
 
-.contenedor-footer h1{
-
-    font-size: 40px;
+.contenedor-footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;  /*Cetra en anchura*/
+    padding: 50px 100px 50px 100px;
+    gap: 50px;
     
 }
 
@@ -53,32 +52,35 @@
     border-radius: 50%;
     border:2px solid var(--color-logo);
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
 
 }
 
+
+
 .contenedor-footer .red-social h1{
-    padding-bottom: 20px;
+    font-size: var(--tamaño-titulo);
+    padding-bottom: 40px;
 }
 
 #facebook-color{
     background-color: var(--color-facebook);
-    font-size: 22px;
+    font-size: var(--tamaño-logo-redes-sociales);
 }
 
 #instagram-color{
     background-color: var(--color-instagram);
-    font-size: 22px;
+    font-size: var(--tamaño-logo-redes-sociales);
 }
 
 #whatsapp-color{
     background-color: var(--color-whatsapp);
-    font-size: 22px;
+    font-size: var(--tamaño-logo-redes-sociales);
 }
 
 #mail-color{
     background-color: var(--color-mail);
-    font-size: 22px;
+    font-size: var(--tamaño-logo-redes-sociales);
 }
 
 
@@ -86,8 +88,8 @@
 
     color: var(--color-nombres);
     text-align: center;
-    font-size:20px;
-    margin-bottom: 25px;
+    font-size: var(--tamaño-contenido-p);
+    padding-top: 30px;
 
 }
 
@@ -117,6 +119,64 @@
 }
 
 
+.red-social{
+    width: 35rem;
+
+}
+
+.red-social p{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+.horarios{
+    width: 35rem;
+}
+
+.horarios h1 {
+    padding-bottom: 40px;
+    font-size: var(--tamaño-titulo);
+}
+
+.horarios p {
+    font-size: var(--tamaño-contenido-p);
+}
+
+.horarios span {
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+
+
+
+
+
+.footer-ubicacion{
+    color: var(--color-letras);
+    text-align: center;  /*Cetra en anchura*/
+    align-items: center;  /*Cetra en altura*/
+    width: 35rem;
+}
+
+.footer-ubicacion h1{
+    font-size: var(--tamaño-titulo);
+}
+
+.footer-ubicacion p{
+    font-size: var(--tamaño-contenido-p);
+    padding: 40px 0 20px 0px;
+}
+
+.footer-ubicacion iframe {
+    width: 60%;
+    height: 5rem;
+    box-shadow: 0 0 6px 2px rgba(17, 17, 17, .3);
+}
 
 .ubicacion iframe {
     margin: 10px;
@@ -131,53 +191,6 @@
 }
 
 
-.red-social{
-    padding-bottom: 40px;
-    border:2px solid var(--color-borde-caja-footer-redes-sociales-responsive);
-    margin: 20px;
-}
-
-.red-social p{
-    padding-top: 20px;
-}
-
-
-
-.horarios{
-    padding-bottom: 40px;
-    border:2px solid var(--color-borde-caja-footer-redes-sociales-responsive);
-}
-
-.horarios h1 {
-    padding-bottom: 20px;
-}
-
-.horarios span {
-    font-weight: bold;
-    color: rgb(90, 90, 90);
-}
-
-.footer-logo{
-    color: var(--color-letras);
-    text-align: center;  /*Cetra en anchura*/
-    align-items: center;  /*Cetra en altura*/
-    padding: 20px;
-    
-}
-
-.footer-logo h1{
-    padding: 20px;
-}
-.footer-logo p{
-    padding: 0px 0 20px 0px;
-}
-
-.footer-logo iframe {
-    width: 60%;
-    height: 200px;
-    box-shadow: 0 0 6px 2px rgba(17, 17, 17, .3);
-}
-
 
 
 /*--------------------------------------------------------------
@@ -188,15 +201,39 @@
  @media screen and (max-width: 1500px){
     
     .contenedor-footer{
-        display: grid;
-        grid-template-columns: repeat(1, 3fr);
+        flex-direction: column;
+        align-items: center;
         padding: 50px 0 50px 0;
-    }
-    
-    .contenedor-footer .red-social{
-        background: var(--color-caja-footer-redes-sociales-responsive);
+        gap: 2.5rem;
     }
 
+    .red-social{
+        width: 100%;
+    }
+
+    .contenedor-footer .red-social h1{
+        padding-bottom: 20px;
+    }
+
+    .horarios{
+        width: 100%;
+    }
+
+    .horarios h1 {
+        padding-bottom: 20px;
+    }
+
+    .footer-ubicacion{
+        width:100%;
+    }
+
+    .footer-ubicacion p{
+        padding: 20px 0 20px 0px;
+    }
+
+    .footer-ubicacion iframe {
+        height: 10rem;
+    }
 
 }  
 
@@ -212,55 +249,13 @@
 } 
     
 /*--------------------------------------------------------------------------------------------------*/    
-    
-@media screen and (max-width: 325px){
-    
-    .contenedor-footer{
-        grid-gap: 35px;
-    }
-    
-    .contenedor-footer .red-social a{
-        width: 35px;
-        height: 35Px;
-        line-height: 31px; 
-
-    }
-    
-    
-    .grupo-2{
-
-        font-size: 10px;        
-    }
-
-    #facebook-color{
-        background-color: var(--color-facebook);
-        font-size: 15px;
-    }
-    
-    #instagram-color{
-        background-color: var(--color-instagram);
-        font-size: 15px;
-    }
-    
-    #whatsapp-color{
-        background-color: var(--color-whatsapp);
-        font-size: 15px;
-    }
-    
-    #mail-color{
-        background-color: var(--color-mail);
-        font-size: 15px;
-    }
-
-} 
 
 @media screen and (max-width: 281px){
     .contenedor-footer .red-social a{
-        width: 33px;
-        height: 33Px;
-        line-height: 29px;
+        width: 38px;
+        height: 38Px;
+        line-height: 34px;
         margin: 5px;
     }
-
 } 
  
